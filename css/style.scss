@@ -47,7 +47,7 @@ button{
     }
 
     #navbar{
-        //background: black;
+        background: black;
         position: fixed;
         top: 0;
         left: 0;
@@ -64,7 +64,7 @@ button{
             margin-left: 15px;
             display: flex;
             img{
-                height: 60px;
+                height: 50px;
                 filter: invert(100%);
             }
             h1{
@@ -73,10 +73,11 @@ button{
         }
 
         #nav{
-            background: black;
+            //background: rgba(black, 0.5);
+           // backdrop-filter: blur(10px);
             height: 100%;
             padding: 0 30px;
-            border-radius: 0 0 0 20px;
+            //border-radius: 0 0 0 20px;
             display: flex;
             align-items: center;
             h2{
@@ -249,14 +250,6 @@ button{
 
             }
         }
-        &:hover{
-            img{
-                opacity: 0.4;
-            }
-            .expo{
-                opacity: 1;
-            }
-        }
     }
 
     .avatar{
@@ -329,6 +322,7 @@ button{
         .carousel{
             display: flex;
             justify-content: center;
+            margin: 15px;
 
             .social{
                 margin: 15px;
@@ -485,6 +479,7 @@ button{
         width: 90vw;
         height: 80vh;
         padding: 2vw;
+        margin-bottom: 0;
 
         #img{
             background-attachment: fixed;
@@ -551,9 +546,9 @@ button{
         overflow: hidden;
         width: 85vw;
         padding: 2vw;
-        margin-top: 5vw;
+        margin-top: 7vw;
         border-radius: 20px;
-        background: rgba(white, 0.1);
+        background: rgba(white, 0.07);
         .title{
             text-align: center;
             margin-bottom: 40px;
@@ -568,10 +563,12 @@ button{
 
     .event{
         position: relative;
-        margin: 15px;
+        margin: auto;
+        margin-bottom: 15px;
+        width: 75vw;
         transition: 0.2s ease;
         img{
-            width: 80vw;
+            width: 100%;
             border: 1px solid rgba(white, 0.3);
             border-radius: 20px;
             transition: 0.2s ease;
@@ -602,12 +599,6 @@ button{
             }
         }
         &:hover{
-            img{
-                opacity: 0.4;
-            }
-            .expo{
-                opacity: 1;
-            }
         }
     }
 
@@ -619,7 +610,7 @@ button{
         border-radius: 15px;
         width: 80%;
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         box-shadow: 0 10px 40px rgba(black, 0.1), inset 0 -10px 15px rgba(black, 0.1);
         h1{
             font-size: 16px;
