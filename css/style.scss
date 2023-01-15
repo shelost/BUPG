@@ -209,16 +209,18 @@ button{
 
     .flex{
         width: 100%;
+        margin: auto;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: flex-start;
         padding-bottom: 20px;
     }
 
     .event{
-        position: relative;
         margin: 15px;
         transition: 0.2s ease;
+        width: 20vw;
         img{
             width: 20vw;
             border: 1px solid rgba(white, 0.3);
@@ -646,11 +648,12 @@ button{
             border-radius: 10px;
         }
         h3{
-            font-weight: 300;
-            font-size: 20px;
+            width: 90%;
+            font-weight: 200;
+            font-size: 14px;
             color: rgba(white, 0.7);
             letter-spacing: 0.2px;
-            margin: 0;
+            margin: auto;
             margin-bottom: 50px;
             span{
                 color: white;

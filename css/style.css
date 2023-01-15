@@ -221,9 +221,12 @@ button:hover {
   }
   .flex {
     width: 100%;
+    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -233,10 +236,10 @@ button:hover {
     padding-bottom: 20px;
   }
   .event {
-    position: relative;
     margin: 15px;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
+    width: 20vw;
   }
   .event img {
     width: 20vw;
@@ -700,11 +703,12 @@ button:hover {
     border-radius: 10px;
   }
   .about h3 {
-    font-weight: 300;
-    font-size: 20px;
+    width: 90%;
+    font-weight: 200;
+    font-size: 14px;
     color: rgba(255, 255, 255, 0.7);
     letter-spacing: 0.2px;
-    margin: 0;
+    margin: auto;
     margin-bottom: 50px;
   }
   .about h3 span {
