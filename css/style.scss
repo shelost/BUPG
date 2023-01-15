@@ -293,11 +293,14 @@ button{
             border-radius: 10px;
         }
         h3{
-            font-weight: 300;
-            font-size: 20px;
+            width: 70%;
+            font-weight: 200;
+            line-height: 160%;
+            font-size: 16px;
             color: rgba(white, 0.7);
             letter-spacing: 0.2px;
             margin: 0;
+            margin: auto;
             margin-bottom: 50px;
             span{
                 color: white;
@@ -340,11 +343,9 @@ button{
                     padding: 0;
                     background: none;
                 }
-
             }
         }
     }
-
 }
 
 
