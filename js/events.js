@@ -1,5 +1,6 @@
 
 let Events = [
+    /*
     {
         title: 'XYZ',
         img: 'keem.png',
@@ -42,6 +43,7 @@ let Events = [
         date: '02-02-2023',
         upcoming: true
     },
+    */
 
     // Past
 
