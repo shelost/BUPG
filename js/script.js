@@ -1,5 +1,5 @@
 
-
+// Header
 
 let header =
     `
@@ -7,7 +7,7 @@ let header =
 
     <a href = '#'>
         <div id = 'mast'>
-            <img src = 'assets/bupg.png' alt = 'logo'>
+            <img src = 'assets/busg.jpg' alt = 'logo'>
         </div>
     </a>
 
@@ -24,12 +24,12 @@ let header =
         </a>
         <a href = '#events'>
             <h2 class = 'navbtn'>
-                News & Events
+                Upcoming
             </h2>
         </a>
-        <a href = '#board'>
+        <a href = '#archive'>
             <h2 class = 'navbtn'>
-                Board
+                Past Events
             </h2>
         </a>
         <a href = '#contact'>
@@ -48,8 +48,56 @@ let header =
 </div>
 
 `
-
 document.body.innerHTML = header + document.body.innerHTML
+
+
+// Events
+
+for (let i = 0; i < Events.length; i++){
+    let e = Events[i]
+
+
+    let div =
+    `
+    <div class = 'event'>
+        <img src = 'assets/${e.img}' alt = 'poster'>
+        <div class = 'expo'>
+            <h1> ${e.title }</h1>
+            <h2> ${e.date} </h2>
+        </div>
+    </div>
+    `
+
+    if (e.upcoming) {
+        Id('upcoming').innerHTML += div
+    } else {
+        Id('past').innerHTML += div
+    }
+}
+
+for (let i = 0; i < Class('event').length; i++) {
+
+    let e = Class('event')[i]
+
+    e.onclick = () => {
+        Id('expanded').src = 'assets/' + Events[i].img
+        Id('overlay').classList.add('active')
+    }
+
+    e.ontouchstart = () => {
+        Id('expanded').src = 'assets/' + Events[i].img
+        Id('overlay').classList.add('active')
+    }
+}
+
+// Overlay
+
+Id('overlay').onclick = () => {
+    Id('overlay').classList.remove('active')
+}
+
+
+// Mobile Navigation
 
 const bars = Id('bars'),
     nav = Id('nav')
