@@ -83,11 +83,6 @@ for (let i = 0; i < Class('event').length; i++) {
         Id('expanded').src = 'assets/' + Events[i].img
         Id('overlay').classList.add('active')
     }
-
-    e.ontouchstart = () => {
-        Id('expanded').src = 'assets/' + Events[i].img
-        Id('overlay').classList.add('active')
-    }
 }
 
 // Overlay
