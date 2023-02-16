@@ -37,13 +37,14 @@ let Events = [
         date: '02-02-2023',
         upcoming: true
     },
+    */
     {
         title: 'XYZ',
         img: 'terrier2.jpg',
         date: '02-02-2023',
         upcoming: true
     },
-    */
+
 
     // Past
 
