@@ -64,7 +64,7 @@ for (let i = 0; i < Events.length; i++){
     `
 
     if (e.upcoming) {
-       // Id('upcoming').innerHTML += div
+        Id('upcoming').innerHTML += div
     } else {
         Id('past').innerHTML += div
     }
