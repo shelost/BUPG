@@ -22,6 +22,11 @@ let header =
                 About Us
             </h2>
         </a>
+        <a href = '#upcoming'>
+            <h2 class = 'navbtn'>
+                Upcoming Events
+            </h2>
+        </a>
         <a href = '#archive'>
             <h2 class = 'navbtn'>
                 Past Events
