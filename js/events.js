@@ -51,7 +51,7 @@ let Events = [
         title: 'XYZ',
         img: '4.jpg',
         date: '02-02-2023',
-        upcoming: true
+        upcoming: false
     },
     {
         title: 'XYZ',
